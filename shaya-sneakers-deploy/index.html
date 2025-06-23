@@ -944,6 +944,29 @@
         padding: 0.3rem 0.7rem;
       }
     }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background: #25d366;
+      color: #fff;
+      font-family: 'Helvetica Now', Arial, sans-serif;
+      font-weight: bold;
+      border-radius: 2rem;
+      padding: 0.7rem 1.5rem 0.7rem 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      z-index: 9999;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .whatsapp-float:hover {
+      background: #128c7e;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -994,7 +1017,7 @@
           <img src="shaya correct.png" alt="Shaya Logo" class="hero-logo-invert" />
           <h1 class="headline">MELROSE ARCH</h1>
           <p class="subheadline">2025 New Collections have arrived</p>
-          <button class="cta">Shop</button>
+          <a href="https://wa.me/27786883331" target="_blank" rel="noopener" class="cta" role="button">Shop</a>
         </div>
       </div>
     </section>
@@ -1156,6 +1179,11 @@
       </div>
     </section>
   </main>
+  <!-- WhatsApp Floating Help Button -->
+  <a href="https://wa.me/27786883331" target="_blank" rel="noopener" class="whatsapp-float" title="How can we help you?">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:32px; height:32px; vertical-align:middle; margin-right:8px;">
+    How can we help you?
+  </a>
   <div class="mobile-menu" tabindex="-1">
     <button class="close-btn" aria-label="Close menu" onclick="document.querySelector('.mobile-menu').classList.remove('open')">&times;</button>
     <ul>
